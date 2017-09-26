@@ -1,0 +1,12 @@
+api:
+    resource: "@ApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+users:
+    type:     rest
+    resource: "@ApiBundle/Controller/UserController.php"

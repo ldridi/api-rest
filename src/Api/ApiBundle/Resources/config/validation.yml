@@ -1,0 +1,19 @@
+Api\ApiBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        email:
+            - NotBlank: ~
+            - Email: ~
+        nom:
+            - NotBlank: ~
+            - Type: string
+        prenom:
+            - NotBlank: ~
+            - Type: string
+        actif:
+            - NotBlank: ~
+            - Type: boolean
+        group:
+            - NotBlank: ~
+            - Type: boolean
